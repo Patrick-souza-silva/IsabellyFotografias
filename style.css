@@ -1,0 +1,451 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+    scroll-behavior: smooth;
+    font-size: 10px;
+  }
+  
+  body {
+    background-color: #fff;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    width: 100%;
+  }
+
+  #banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    background-color: #131313;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+    #banner h1 { 
+        color: #fff;
+        font-size: 5rem;
+        font-style: inherit;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    #banner p {
+        color: #fff;
+        font-size: 1.5rem;
+        font-style: italic;
+    }
+
+    #logo {
+        width: 18rem;
+    }
+
+    #person {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #person-self{
+        padding-top: 2vh;
+    }
+
+    #self{
+        width: 22rem;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.40), 0 1px 2px rgba(0, 0, 0, 0.40);
+    }
+
+    #person-info{
+        text-align: center;
+        padding: 2rem;
+    }
+
+    #person-info h4{
+        font-size: 2rem;
+        color: #131313;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    #person-contact{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    #whatsapp{
+        width: 40rem;
+    }
+
+    #gallery{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        gap: 5rem;
+        flex-direction: column;
+    }
+
+    #gallery div img{
+        width: 40rem;
+        border-radius: 1rem;
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5), 0 4px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .description{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        background-color: #131313;
+        height: 3vh;
+        border-radius: 10px;
+        animation: pulse 1.5s infinite;
+    }
+
+    .saiba-mais{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        background-color: #1cb711;
+        height: 3vh;
+        border-radius: 10px;
+    }
+
+    .saiba-mais h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-family: "Raleway", serif;
+    }
+
+    .description h3{
+        color: #fff;
+        font-size: 4rem;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    #contact{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+
+    #contact h2{
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    #contact h4{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    #final{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 8vh;
+        width: 100%;
+        background-color: #131313;
+    }
+
+    #final  div h2{
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    
+    #final div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #orcamento{
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.40), 0 1px 2px rgba(0, 0, 0, 0.40);
+        height: auto;
+        width: 85%;
+        border-radius: 15px;
+        padding: 2rem;
+        margin-bottom: 10px;
+      }
+
+    #orcamento-casamento{
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.40), 0 1px 2px rgba(0, 0, 0, 0.40);
+        height: auto;
+        width: 85%;
+        border-radius: 15px;
+        padding: 2rem;
+        margin-bottom: 10px;
+      }
+
+    #orcamento header{
+        background-color: #131313;
+        border-radius: 10px;
+        height: 6vh;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.40), 0 1px 2px rgba(0, 0, 0, 0.40);
+    }
+
+    #orcamento-casamento header{
+        background-color: #131313;
+        border-radius: 10px;
+        height: 6vh;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.40), 0 1px 2px rgba(0, 0, 0, 0.40);
+    }
+
+    #orcamento header h1{
+        color: #fff;
+        font-size: 4rem;
+        font-family: 'Dancing Script', cursive;
+        letter-spacing: 1rem;
+    }
+
+    #orcamento-casamento header h1{
+        color: #fff;
+        font-size: 4rem;
+        font-family: 'Dancing Script', cursive;
+        letter-spacing: 1rem;
+    }
+
+    #orcamento main{
+        background-color: #6666663d;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.80), 0 1px 2px rgba(0, 0, 0, 0.80);
+        margin-top: 20px;
+        border-radius: 10px;
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        padding-top: 20px;
+    }
+
+    .options{
+        background-color: #131313af;
+        height: auto;
+        width: auto;
+        border-bottom-right-radius: 1rem;
+        transform-origin: left;
+        animation: unfold 1.5s ease-out forwards; 
+    }
+
+    @keyframes unfold {
+        0% {
+          width: 0%; /* Começa com largura 0 */
+        }
+        100% {
+          width: 70%; /* Termina com largura total */
+        }
+      }
+ 
+    #orcamento main div h2{
+       color: #fff;
+       align-items: flex-start;
+       justify-content: center;
+       font-size: 3rem;
+       font-family: 'Dancing Script', cursive;
+       padding-left: 10px;
+    }
+
+    .info{
+        width: auto;
+        height: auto;
+        padding-left: 1rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 10px;
+    }
+
+    .info h4{
+        width: 100%;
+        color: black;
+        font-size: 2rem;
+    }
+
+    .info h1{
+      width: 100%;
+      font-size: 3rem;
+      text-align: center;
+      font-family: 'Dancing Script', cursive;
+      font-size: bold;
+    }
+
+    #like{
+        border-radius: 10px;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    #like h2{
+       font-family: 'Dancing Script', cursive;
+       font-size: 4rem;
+
+    }
+    #like h4 {
+        font-size: 2rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        padding-top: 2rem;
+        font-size: bold;
+    }
+
+    #whatsapp-icon{
+      position: fixed; /* Fixa o ícone na tela, mesmo ao rolar */
+      bottom: 20px; /* Distância da parte inferior da tela */
+      left: 20px;
+      width: 60px; /* Largura do ícone */
+      height: 60px; /* Altura do ícone */
+      border-radius: 50%; /* Torna o ícone circular */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999; 
+    }
+
+    #whatsapp-icon a img{
+      width: 6rem;
+      height: 6rem;
+      animation: pulse 1.5s infinite;
+    }
+    
+    #mainOrcamento img{
+      width: 10rem;
+      border-radius: 20%;
+      display: flex;
+    }
+
+@media (max-width: 768px) {
+
+  @keyframes unfold {
+    0% {
+      width: 0%; /* Começa com largura 0 */
+    }
+    100% {
+      width: 75%; /* Termina com largura total */
+    }
+  }
+
+  #banner h1 {
+    font-size: 2.5rem;
+  }
+
+  #banner p {
+    font-size: 1.2rem;
+  }
+
+  #logo {
+    width: 14rem;
+  }
+
+  #self {
+    width: 18rem;
+  }
+
+  .whatsapp {
+    width: 30rem;
+  }
+
+  #gallery div img {
+    width: 30rem;
+  }
+
+  .description h3 {
+    font-size: 1.2rem;
+  }
+
+  #contact h2 {
+    font-size: 2.5rem;
+  }
+
+  #contact h4 {
+    font-size: 1.2rem;
+  }
+
+  #final h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #banner h1 {
+    font-size: 3rem;
+  }
+
+  #banner p {
+    font-size: 2rem;
+  }
+
+  #logo {
+    width: 15rem;
+  }
+
+  #self {
+    width: 14rem;
+  }
+
+  .whatsapp {
+    width: 35rem;
+  }
+
+  #gallery div img {
+    width: 30rem;
+  }
+
+  .description h3 {
+    font-size: 2rem;
+  }
+
+  #contact h2 {
+    font-size: 4rem;
+  }
+
+  #contact h4 {
+    font-size: 1rem;
+  }
+
+  #final h2 {
+    font-size: 1rem;
+  }
+}
+
+
